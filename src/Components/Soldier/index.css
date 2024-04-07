@@ -1,6 +1,5 @@
 .bg-container{
     background-image: URL('https://res.cloudinary.com/dhtdkkae1/image/upload/v1712390863/background_img_gz5gws.png');
-    
     background-size: auto;
     background-repeat: no-repeat;
     display: flex;
@@ -71,7 +70,6 @@
   .title {
     font-size: 18px;
     margin-bottom: 5px;
-    
     padding-right: 25px;
   }
   
@@ -85,7 +83,7 @@
   
   .progress {
     height: 100%;
-    background-color: #f9a825; /* Yellow color for progress */
+    background-color: #f9a825; 
   }
   
   .count {
@@ -95,7 +93,7 @@
     margin-bottom: 5px;
   }
   .horizontal-line {
-    border: 1px solid #c0c0c0; /* Hash color */
+    border: 1px solid #c0c0c0; 
     margin: 5px 0;
 }
 .acheviments{

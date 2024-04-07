@@ -5,10 +5,11 @@ import './index.css'
 
 const Soldier = () =>{
     const [data,setData] = useState('')
-    const [percentage, setPercentage] = useState({});
+    const [percentage, setPercentage] = useState({}); 
     const [achievements, setAchievements] = useState([]);
     const [battlepacksData, setBattlepacksData] = useState([]);
     
+   // fetching data for user profile 
    useEffect (() =>{
     const profileData = async() =>{
         const URL = "https://backend-code-rvuz.onrender.com/user"
@@ -30,7 +31,8 @@ const Soldier = () =>{
     }
     profileData()
    },[])
-
+   
+   // calculating user score percentages
    useEffect(() => {
     const calculatePercentage = () => {
         const newPercentage = {};
@@ -42,6 +44,7 @@ const Soldier = () =>{
     calculatePercentage();
 }, [battlepacksData]);
 
+// fetching data for achivements
 useEffect(() => {
     fetch('https://backend-code-rvuz.onrender.com/achivements')
       .then(response => response.json())
@@ -49,6 +52,7 @@ useEffect(() => {
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
+  // fetching data for different battelpacks
   useEffect(() => {
     const fetchData = async () => {
         try {
@@ -68,6 +72,7 @@ useEffect(() => {
 
     return(
         <div className="bg-container">
+            {/*user profile of gamer */}
             <img src="https://res.cloudinary.com/dhtdkkae1/image/upload/v1712392229/soldier__look_sxgav6.png" alt="soldier_img" className='soldier_img'/>
             <div className='profile-and-content'>
               <div className='soldier-info'>
@@ -81,6 +86,9 @@ useEffect(() => {
                 </div>
                </div>
             <div className='progress-report'>
+                
+                {/*Battelfield scores with percentages */}
+                
                 <div className="progress-list">
                     {battlepacksData.map((item)=>(
                         <div key={item.title}>
@@ -102,6 +110,9 @@ useEffect(() => {
                     <hr className="horizontal-line" />
                     <p>Battlepacks</p>
                 </div>
+                
+                {/*Battelfield acheviments */}
+
                 <div className='acheviments-cards'>
                         <div className='acheviments'>
                             <div>
@@ -118,6 +129,9 @@ useEffect(() => {
                             </div>
 
                         </div>
+                        
+                        {/*Battelfield cards */}
+
                         <div className="container">
                             {achievements.map(achievement => (
                                 <div key={achievement.id} className="card">
