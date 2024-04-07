@@ -1,0 +1,192 @@
+.bg-container{
+    background-image: URL('https://res.cloudinary.com/dhtdkkae1/image/upload/v1712390863/background_img_gz5gws.png');
+    
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
+}
+.soldier-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.soldier-info img{
+    height:100px;
+    width:80px;
+}
+.soldier-info h1{
+    color:#fff;
+    font-weight:500;
+    font-size:23px;
+}
+.soldier-info-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.soldier-info-para button{
+    background-color: transparent;
+    height:30px;
+    border: 1px solid #c0c0c0;
+    color:#fff;
+
+    
+}
+.soldier-info-para p{
+    color: #fff;
+}
+.profile-and-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.progress-list {
+    font-family: sans-serif;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .progress-item {
+    margin-bottom: 15px;
+    display: flex;
+    gap:50px;
+  }
+
+  .progress-item:hover{
+    color: #222;
+    background-color: white;
+    cursor: pointer;
+
+  }
+  
+  .title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    
+    padding-right: 25px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #f9a825; /* Yellow color for progress */
+  }
+  
+  .count {
+    text-align: right;
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
+  .horizontal-line {
+    border: 1px solid #c0c0c0; /* Hash color */
+    margin: 5px 0;
+}
+.acheviments{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color:#fff;
+    gap:40px;
+}
+.progress-report{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:20px;
+}
+
+@media screen and (max-width:769px){
+  .progress-report{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .soldier_img{
+    max-height:300px;
+    width:100px;
+  }
+  .bg-container{
+    height:350vh;
+    width:100%;
+    padding:50px;
+
+  }
+  
+
+}
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+    color:#fff;
+    
+  }
+  
+  .card {
+    border:none;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #222;
+  }
+  .card:hover{
+    background-color: #fff;
+    color:black;
+    cursor: pointer;
+    
+  }
+  
+  .card-header {
+    color:#c0c0c0;
+    padding: 5px;
+    font-weight: 300;
+  }
+  .card-header h3{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .card-header:hover{
+    color:black;
+  }
+  
+  .card-body {
+    padding: 10px;
+    
+  }
+  .card-body img {
+    width: 100px;
+    height:40px;
+    text-align: center;
+    
+  }
+  .card-body img:hover{
+    filter: invert(100%);
+  }
+
+  .acheviments-cards{
+    display: flex;
+    flex-direction: column;
+    
+  }
