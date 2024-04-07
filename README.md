@@ -1,4 +1,4 @@
-
+![Screenshot](https://github.com/JogiAshok87/Inditech_Assignment/assets/113456041/7f1f715c-abfd-4548-90e6-e3f6b1a0db36)
 
 ### This project is a recreation of the Battlefield Soldier page. It includes dynamic data fetched from a backend API and interactive hover and click interactions.
 
