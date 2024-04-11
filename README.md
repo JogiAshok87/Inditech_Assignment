@@ -6,10 +6,21 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+commands to create React App
+
+npm install -g create-react-app
+create-react-app Inditech_Assignment --use-npm
+
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+## Installation
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Start the development server using `npm start`.
 
 ### `npm start`
 
@@ -32,6 +43,12 @@ More: Discover additional features.
 ### API Integration
 The dynamic data highlighted in the green section of the page is fetched from the backend using API calls.
 Ensure the backend server is running to retrieve the latest data.
+
+### Technologies used
+React Js
+React Hooks
+Node Js
+CSS
 
 ### API's
 
